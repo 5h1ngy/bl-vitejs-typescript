@@ -5,7 +5,9 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.x-3178C6.svg?logo=typescript)
 ![ESLint](https://img.shields.io/badge/ESLint-8.x-4B32C3.svg?logo=eslint)
 
-Un moderno boilerplate per applicazioni web TypeScript con bundler Vite. Combina la potenza della tipizzazione statica con la velocità di sviluppo di Vite, supportando funzionalità 100% offline e operazioni locali senza API.
+A modern boilerplate for TypeScript web applications with Vite bundler. Combines the power of static typing with Vite's speed, supporting 100% offline functionality and local operations without API.
+
+**Topics:** `typescript` `vite` `web-app` `spa` `offline-first` `type-safety` `local-storage` `minimal` `esm`
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -16,151 +18,152 @@ Un moderno boilerplate per applicazioni web TypeScript con bundler Vite. Combina
 
 ## ✨ Features
 
-- 🔒 TypeScript per codice tipizzato e sicuro
-- 🔄 Hot Module Replacement (HMR) per sviluppo rapido
-- ⚡ Vite per un bundling ultra-veloce
-- 💾 Supporto completo per funzionalità offline (localStorage)
-- 📤 Funzionalità di import/export e backup
-- 📊 Supporto per dashboard e visualizzazioni statistiche
-- 🗓️ Possibilità di implementare timeline e viste calendario
-- 🔍 Configurazione ESLint con type-checking
-- 🌐 Web application ottimizzata per la distribuzione
+- 🔒 Type safety with TypeScript
+- 🔄 Hot Module Replacement (HMR) during development
+- ⚡ Ultra-fast build with Vite bundler
+- 💾 Support for offline data storage
+- 📤 Import/export capability for data
+- 🔍 TypeScript linting with ESLint
+- 📊 Support for dashboard and statistical visualizations
+- 🗓️ Possibility to implement timeline and calendar views
+- 🔒 Strict type checking
+- 📦 ES Module support
 
 ## 🗂️ Project Structure
 
 ```
 bl-vitejs-typescript/
-├── public/             # Risorse statiche
+├── public/             # Static assets
 ├── src/
-│   ├── assets/         # Immagini, font e risorse varie
-│   ├── modules/        # Moduli TypeScript
-│   ├── utils/          # Funzioni di utilità
-│   ├── types/          # Definizione di tipi TypeScript
-│   ├── index.html      # Template HTML
-│   ├── style.css       # Stili globali
-│   └── main.ts         # Entry point dell'applicazione
-├── .eslintrc.cjs       # Configurazione ESLint
-├── tsconfig.json       # Configurazione TypeScript
-├── tsconfig.node.json  # Configurazione TypeScript per Node
-├── index.html          # Template HTML root
-├── package.json        # Dipendenze e script
-└── vite.config.ts      # Configurazione Vite
+│   ├── assets/         # Project assets (images, fonts, etc.)
+│   ├── modules/        # TypeScript modules
+│   ├── utils/          # Utility functions
+│   ├── types/          # TypeScript type definitions
+│   ├── index.html      # HTML template
+│   ├── style.css       # Global styles
+│   └── main.ts         # Application entry point
+├── .eslintrc.cjs       # ESLint configuration
+├── tsconfig.json       # TypeScript configuration
+├── tsconfig.node.json  # TypeScript configuration for Node
+├── index.html          # HTML template root
+├── package.json        # Project dependencies and scripts
+└── vite.config.ts      # Vite configuration
 ```
 
 ## 🚀 Setup & Development
 
-### 📥 Installazione
+### 📥 Install
 
 ```bash
-# Utilizzando NPM
+# Using NPM
 $ npm install
 
-# Utilizzando Yarn
+# Using Yarn
 $ yarn
 
-# Utilizzando PNPM
+# Using PNPM
 $ pnpm install
 ```
 
-### 🔧 Sviluppo
+### 🔧 Development
 
 ```bash
-# Utilizzando NPM
+# Using NPM
 $ npm run dev
 
-# Utilizzando Yarn
+# Using Yarn
 $ yarn dev
 
-# Utilizzando PNPM
+# Using PNPM
 $ pnpm dev
 ```
 
 ### 📦 Build
 
 ```bash
-# Utilizzando NPM
+# Using NPM
 $ npm run build
 
-# Utilizzando Yarn
+# Using Yarn
 $ yarn build
 
-# Utilizzando PNPM
+# Using PNPM
 $ pnpm build
 ```
 
 ### 🔍 Preview
 
 ```bash
-# Utilizzando NPM
+# Using NPM
 $ npm run preview
 
-# Utilizzando Yarn
+# Using Yarn
 $ yarn preview
 
-# Utilizzando PNPM
+# Using PNPM
 $ pnpm preview
 ```
 
 ## 📦 Package Managers
 
-Questo progetto supporta diversi package manager. Ecco le caratteristiche di ciascuno:
+This project supports multiple package managers. Here's how to use each one:
 
 ### NPM
 
-NPM è il package manager predefinito per Node.js.
+NPM is the default package manager for Node.js.
 
-**Installazione NPM:**
+**Install NPM:**
 ```bash
-# Incluso con l'installazione di Node.js
+# Included with Node.js installation
 ```
 
-**Caratteristiche principali:**
-- 📚 Vasto ecosistema di pacchetti
-- 🔒 Struttura gerarchica di node_modules
-- 📋 Package.json per la gestione delle dipendenze
+**Key features:**
+- 📚 Vast package ecosystem
+- 🔒 Hierarchical node_modules structure
+- 📋 Package.json for dependency management
 
 ### Yarn
 
-Yarn è un'alternativa rapida, affidabile e sicura a NPM.
+Yarn is a fast, reliable, and secure alternative to NPM.
 
-**Installazione Yarn:**
+**Install Yarn:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g yarn
 ```
 
-**Caratteristiche principali:**
-- ⚡ Velocità di installazione superiore
-- 📦 Caching offline
-- 🔒 Maggiore sicurezza con checksum
-- 📋 yarn.lock per installazioni deterministiche
+**Key features:**
+- ⚡ Faster installation speeds
+- 📦 Offline caching
+- 🔒 Better security with checksums
+- 📋 yarn.lock for deterministic installations
 
 ### PNPM
 
-PNPM è un package manager efficiente in termini di spazio su disco.
+PNPM is a disk-space efficient package manager.
 
-**Installazione PNPM:**
+**Install PNPM:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g pnpm
 ```
 
-**Caratteristiche principali:**
-- 💾 Risparmio di spazio su disco tramite symlink
-- 🚀 Velocità di installazione elevata
-- 🔄 Storage con indirizzamento basato sul contenuto
-- 📋 pnpm-lock.yaml per blocco delle dipendenze
+**Key features:**
+- 💾 Disk space savings through symlinks
+- 🚀 Fast installation speeds
+- 🔄 Content-addressable storage
+- 📋 pnpm-lock.yaml for dependency lock
 
-### Confronto
+### Comparison
 
-| Funzionalità          | NPM     | Yarn    | PNPM    |
+| Feature               | NPM     | Yarn    | PNPM    |
 |-----------------------|---------|---------|---------|
-| Utilizzo disco        | Alto    | Alto    | Basso   |
-| Velocità installazione| Lenta   | Veloce  | Velocissima |
-| Installazioni parallele| Limitato| Sì      | Sì      |
-| Supporto workspaces   | Limitato| Buono   | Ottimo  |
-| Modalità offline      | Limitato| Buono   | Buono   |
-| Sicurezza             | Buona   | Migliore| Migliore|
+| Disk usage            | High    | High    | Low     |
+| Installation speed    | Slow    | Fast    | Fastest |
+| Parallel installations| Limited | Yes     | Yes     |
+| Workspace support     | Limited | Good    | Best    |
+| Offline mode          | Limited | Good    | Good    |
+| Security              | Good    | Better  | Better  |
 
 ## 📚 Resources
 
